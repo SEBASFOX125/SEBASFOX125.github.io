@@ -95,24 +95,39 @@ body {
 }
 
 .typing {
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  display: inline-block;
-  max-width: 100%;
-  width: 22ch; /* Approximate length of text */
   border-right: 3px solid var(--accent);
-  animation: typing 3s steps(22), blink 0.6s infinite step-end;
+  animation: blink 0.6s infinite step-end;
 }
 
+.typing span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(22, end) forwards;
+}
+
+
+
 @media (max-width: 480px) {
-  .typing {
-    width: 18ch; /* Adjust for smaller screens */
-    animation: typing 3s steps(18), blink 0.6s infinite step-end;
+  .typing span {
+    font-size: 1.5rem;
+    animation: typing 3s steps(18, end) forwards;
   }
 }
 
-@keyframes typing { from { width: 0; } to { width: 100%; } }
-@keyframes blink { 50% { border-color: transparent; } }
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 
 .scroll-down {
   margin-top: 2rem;
