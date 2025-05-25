@@ -10,3 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+// Ensure smooth scrolling (fallback if needed)
+document.documentElement.style.scrollBehavior = 'smooth';
+
+// Collapse the Bootstrap navbar on link click (mobile only)
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth < 992) {             // Bootstrap’s lg breakpoint
+      document.querySelector('.navbar-toggler').click();
+    }
+  });
+});
