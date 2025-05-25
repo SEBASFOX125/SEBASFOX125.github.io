@@ -37,18 +37,7 @@ body {
 }
 
 /* Hero */
-#hero {
-  height: 90vh;
-  background: url('https://i.imgur.com/rkttqaX.jpeg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.hero-overlay {
-  background: rgba(0,0,0,0.6);
-  padding: 3rem;
-  border-radius: 12px;
+
 }
 #hero h1 {
   font-family: var(--font-heading);
@@ -60,6 +49,51 @@ body {
   font-size: 1.3rem;
   color: #eee;
 }
+/* Updated Hero Section */
+#hero {
+  min-height: 100vh;
+  background: url('https://i.imgur.com/rkttqaX.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero Text Adjustments */
+#hero h1 {
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+#hero p.lead {
+  font-size: 1.1rem;
+  color: #eee;
+}
+
+@media (min-width: 768px) {
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #hero p.lead {
+    font-size: 1.3rem;
+  }
+  .hero-overlay {
+    max-width: 700px;
+    padding: 3rem;
+  }
+}
+
 .typing {
   overflow: hidden;
   white-space: nowrap;
