@@ -15,7 +15,7 @@
   <!-- NAVIGATION -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tijani Alim</a>
+      <a class="navbar-brand" href="#"> Welcome</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -86,25 +86,25 @@
         <div class="skill-item">
           <i class="fab fa-html5 fa-2x"></i>
           <div class="progress">
-            <div class="progress-bar" style="width: 75%;">75%</div>
+            <div class="progress-bar" style="width: 80%;">80%</div>
           </div>
         </div>
         <div class="skill-item">
           <i class="fab fa-css3-alt fa-2x"></i>
           <div class="progress">
-            <div class="progress-bar" style="width: 65%;">65%</div>
+            <div class="progress-bar" style="width: 75%;">75%</div>
           </div>
         </div>
         <div class="skill-item">
           <i class="fab fa-js fa-2x"></i>
           <div class="progress">
-            <div class="progress-bar" style="width: 50%;">50%</div>
+            <div class="progress-bar" style="width: 60%;">60%</div>
           </div>
         </div>
         <div class="skill-item">
           <i class="fab fa-react fa-2x"></i>
           <div class="progress">
-            <div class="progress-bar" style="width: 40%;">40%</div>
+            <div class="progress-bar" style="width: 55%;">55%</div>
           </div>
         </div>
       </div>
@@ -140,29 +140,32 @@
     </div>
   </div>
 </section>
+
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="py-5 bg-dark text-white text-center">
-    <div class="container">
-      <h2>Projects</h2>
-      <p>Here are a few things I’ve built recently.</p>
-      <!-- Example project card -->
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-6 col-lg-4">
-          <div class="card project-card">
-            <img src="https://i.imgur.com/bxIFDVi.png" class="card-img-top" alt="Image Search App">
-            <div class="card-body">
-              <h5 class="card-title">Image Search App</h5>
-              <p class="card-text">A responsive Unsplash-based search app with infinite scroll and lazy loading.</p>
-              <a href="#" class="btn btn-sm btn-primary">View Live</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more .col-… as needed -->
-      </div>
+  <section id="projects" style="background-color: black; padding: 50px 20px;">
+  <h2 style="color: white;">Projects</h2>
+  <p style="color: #ccc;">Here are a few things I’ve built recently.</p>
+  <div class="projects-container">
+    <div class="project-card">
+      <a href="https://sebasfox125.github.io/Age-calculator/">
+        <img src="https://i.imgur.com/AK3ywZV.png" alt="Age Calculator">
+      </a>
+      <h5>Age Calculator</h5>
+      <p>This app calculates your age from a selected birth date. Simply choose a date and hit "Calculate Age" to see your result in real time.</p>
+      <a class="view-live" href="https://sebasfox125.github.io/Age-calculator/">View Live</a>
     </div>
-  </section>
+    <div class="project-card">
+      <a href="https://sebasfox125.github.io/Anime-generator/">
+        <img src="https://i.imgur.com/4C3YOoR.png" alt="Anime Generator">
+      </a>
+      <h5>Anime Generator</h5>
+      <p>This app fetches a random anime picture and name from an API. It includes a loading effect, API error handling, and clean UI styling.</p>
+      <a class="view-live" href="https://sebasfox125.github.io/Anime-generator/">View Live</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- EXPERIENCE -->
   <section id="experience" class="section-light">
@@ -175,7 +178,7 @@
           <p>Hands-on training in networking, cybersecurity, and ethical hacking.</p>
         </div>
         <div class="timeline-item">
-          <h5>Freelance Web Developer</h5>
+          <h5>A Web Developer</h5>
           <span>Jun 2023 – Present</span>
           <p>Built portfolios and landing pages with HTML, CSS, and Bootstrap.</p>
         </div>
@@ -188,23 +191,78 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-5 bg-black text-white text-center">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <p>Feel free to drop me a line at:</p>
-      <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+ <!-- CONTACT -->
+<section id="contact" class="py-5 bg-black text-white">
+  <div class="container" style="max-width: 600px; margin: 0 auto;">
+    <h2 class="text-center mb-3">Get In Touch</h2>
+    <p class="text-center mb-4">Feel free to drop me a line at:</p>
+    <p class="text-center mb-5">
+      <a href="mailto:your.email@example.com" class="text-white" style="text-decoration: underline;">bellomubarak123456@gmail.com</a>
+    </p>
+    <div style="padding-left: 150px;">
+    <form action="https://formspree.io/f/xvgaqrvz" method="post" style="text-align: left;">
+      <div class="form-group mb-3">
+        <label for="name" class="form-label">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required class="form-input" />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required class="form-input" />
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="message" class="form-label">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required class="form-textarea"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
     </div>
-  </section>
+  </div>
+  
+</section>
 
   <!-- FOOTER -->
-  <footer class="py-3 bg-dark text-center text-white">
-    <div>&copy; 2025 Tijani Alim. All Rights Reserved.</div>
-    <div class="social-icons mt-2">
-      <a href="#"><i class="fab fa-github fa-lg"></i></a>
-      <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-    </div>
-  </footer>
+<footer class="py-3 bg-dark text-center text-white">
+  <div>&copy; 2025 Bello Mubarak. All Rights Reserved.</div>
+  <div id="date-time" style="margin-top: 10px;"></div>
+  <div style="padding-bottom: 50px;"></div>
+</footer>
+
+<!-- Your JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Smooth scroll
+    const links = document.querySelectorAll('a[href^="#"]');
+    for (let link of links) {
+      link.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+
+    // Date/time update
+    function updateDateTime() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const currentDate = now.toLocaleDateString('en-US', options);
+      const currentTime = now.toLocaleTimeString('en-US');
+
+      const dateTimeElement = document.getElementById('date-time');
+      if (dateTimeElement) {
+        dateTimeElement.innerHTML = `<strong>Date:</strong> ${currentDate} <br> <strong>Time:</strong> ${currentTime}`;
+      }
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  });
+</script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
