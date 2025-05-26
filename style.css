@@ -38,16 +38,16 @@ body {
 
 #hero {
   min-height: 100vh;
-  background: url('') center/cover no-repeat;
+  width: 100%;
+  background: url('images/hero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
   text-align: center;
-  position: relative;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
+
 
 .hero-overlay {
   background: rgba(0, 0, 0, 0.6);
@@ -73,19 +73,20 @@ body {
   font-size: 1rem;
   color: #eee;
 }
+@media (max-width: 768px) {
+  #hero {
+    padding: 1rem;
+  }
 
-@media (min-width: 768px) {
   #hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
+
   #hero p.lead {
-    font-size: 1.3rem;
-  }
-  .hero-overlay {
-    max-width: 700px;
-    padding: 3rem;
+    font-size: 1rem;
   }
 }
+
 
 .typing {
   display: inline-block;
@@ -93,29 +94,31 @@ body {
   white-space: nowrap;
   border-right: 3px solid var(--accent);
   animation: blink 0.6s infinite step-end;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
+  width: 22ch; /* Adjust based on the length of your text */
 }
 
 .typing span {
   display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(30, end) forwards;
+  animation: typing 3s steps(22, end) forwards;
 }
 
 @media (max-width: 480px) {
+  .typing {
+    width: 18ch;
+  }
+
   .typing span {
     font-size: 1.5rem;
     animation: typing 3s steps(18, end) forwards;
   }
 }
 
+
 @keyframes typing {
   from { width: 0; }
-  to { width: 100%; }
+  to { width: 22ch; } /* Match this with the .typing width */
 }
+
 
 @keyframes blink {
   50% { border-color: transparent; }
