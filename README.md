@@ -54,13 +54,9 @@ cd portfolio-project
 
 ## Development Notes
 **Challenges Faced**
-
-    Bootstrap Carousel — required careful review of Bootstrap docs and practice to properly implement
-
-    Sticky Navbar — solved with correct use of position: sticky and CSS adjustments
-
-    Dynamic Footer — used JavaScript Date() object with setInterval()
-
-    Mobile Responsiveness — fine-tuned layout with Bootstrap grid classes and custom media queries
+Bootstrap Carousel — required careful review of Bootstrap docs and practice to properly implement
+Sticky Navbar — solved with correct use of position: sticky and CSS adjustments
+Dynamic Footer — used JavaScript Date() object with setInterval()
+Mobile Responsiveness — fine-tuned layout with Bootstrap grid classes and custom media queries
 
 
