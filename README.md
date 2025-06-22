@@ -4,9 +4,18 @@ A responsive and modern personal portfolio website showcasing core frontend deve
 
 ---
 
+## 📞 Contact
+
+* **Name**: Bello Mubarak
+* **Matric Number**: 2024/13199
+* **Course Code**: ICT 118
+* **GitHub**: [SEBASFOX125](https://github.com/SEBASFOX125)
+
+---
+
 ## 🚀 Live Demo
 
-[Link to your deployed site here](https://your-github-pages-link.com) ---
+[Project site](https://sebasfox125.github.io/) ---
 
 ## ✨ Features
 
@@ -59,18 +68,7 @@ During development, the following areas presented learning opportunities:
 
 ---
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE). ---
-
-## 📞 Contact
-
-* **Name**: Bello Mubarak
-* **Matric Number**: 2024/13199
-* **Course Code**: ICT 118
-* **GitHub**: [SEBASFOX125](https://github.com/SEBASFOX125)
-
----
 
 ## 🎓 Project Details
 
